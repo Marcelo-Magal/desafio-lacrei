@@ -5,11 +5,12 @@ export const StyledItem = styled.li<{ isActive: boolean }>` // Cria um component
 .menu-item {
     color: ${props => props.isActive ? '#018762' : '#1F1F1F'};
     font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
+    
    
 }
 

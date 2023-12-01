@@ -1,11 +1,12 @@
 import React from 'react';
+import FooterContainer from '../../Components/FooterContainer/FooterContainer';
+import { StyledHome } from './styles';
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <h1>Página Inicial</h1>
-      {/* Outros conteúdos da página inicial */}
-    </div>
+    <StyledHome>
+      
+    </StyledHome>
   );
 };
 

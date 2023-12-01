@@ -1,12 +1,14 @@
 import React from "react";
-import { StyledHeader } from "./styles";
+import { StyledFooter } from "./styles";
+import FotterContainer from "../FooterContainer/FooterContainer";
 
 const Footer: React.FC = () => {
   return (
-    <StyledHeader>
-      <p></p>
-    </StyledHeader>
+    <StyledFooter>
+      <FotterContainer />
+    </StyledFooter>
   );
 };
 
 export default Footer;
+

@@ -2,7 +2,7 @@ import React from "react";
 import MenuItem from "../MenuItem/MenuItem";
 import { StyledList } from "./styles";
 
-const Footer: React.FC = () => {
+const HeaderMenu: React.FC = () => {
   return (
     <StyledList>
       <MenuItem text="Home" to="/" />
@@ -12,4 +12,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer;
+export default HeaderMenu;

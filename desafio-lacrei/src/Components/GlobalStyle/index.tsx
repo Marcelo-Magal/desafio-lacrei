@@ -202,7 +202,7 @@ html {
   }
 
   /* Estilos Base e Outros Estilos Globais */
-
+  
 `;
 
 export default GlobalStyle;

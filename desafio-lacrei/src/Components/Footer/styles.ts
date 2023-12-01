@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header`
-p {
-    align-content: center;
-}
+export const StyledFooter = styled.footer`
+    width: 85.375rem;
+    height: 9.88rem;
+    background: red;
+    
+    
+    
+
 `;
