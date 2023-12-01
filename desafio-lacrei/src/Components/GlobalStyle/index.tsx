@@ -201,6 +201,10 @@ html {
     }
   }
 
+  li {
+    list-style: none;
+  }
+
   /* Estilos Base e Outros Estilos Globais */
   
 `;

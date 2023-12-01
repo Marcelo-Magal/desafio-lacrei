@@ -5,6 +5,6 @@ export const StyledFooterPagesItem = styled.li<{ isActive: boolean }>`
 .menu-item {
     color: ${props => props.isActive ? '#018762' : '#1F1F1F'};
     
-   
+
 }
 `;

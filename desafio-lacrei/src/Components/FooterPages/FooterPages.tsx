@@ -12,3 +12,4 @@ const FooterPages: React.FC = () => {
   );
 };
 
+export default FooterPages;
