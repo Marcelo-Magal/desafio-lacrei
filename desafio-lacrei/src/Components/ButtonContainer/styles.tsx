@@ -4,16 +4,14 @@ export const StyledButtonContainer = styled.div`
   display: flex;
   gap: 4.31rem;
   margin-top: 3rem;
-  
+
   .button-pessoa {
-    background-color	: #018762;
-    color: #FFF;
-  
+    background-color: #018762;
+    color: #fff;
   }
 
   .button-profissional {
-    background-color: #FFF;
-     color: #018762;
+    background-color: #fff;
+    color: #018762;
   }
-  
 `;

@@ -1,5 +1,3 @@
 import styled from "styled-components";
-                                                               
-export const StyledFooterSocialItem = styled.li` 
 
-`;
+export const StyledFooterSocialItem = styled.li``;

@@ -5,7 +5,6 @@ export const StyledPageButton = styled(Link)`
   width: 12rem;
   height: 3rem;
   flex-shrink: 0;
-
   padding: 0.625rem 2.75Srem;
   border: 2px solid rgb(1, 135, 98);
   border-radius: 0.5rem;

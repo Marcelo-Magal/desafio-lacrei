@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyledPageButton } from './styles'; // Ajuste o caminho conforme necessário
+import React from "react";
+import { StyledPageButton } from "./styles"; // Ajuste o caminho conforme necessário
 
 interface PageButtonProps {
   to: string;

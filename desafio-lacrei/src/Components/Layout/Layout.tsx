@@ -1,7 +1,7 @@
-import React from 'react';
-import Header from '../Components/Header/Header';
-import Footer from '../Components/Footer/Footer';
-import PageContainer from '../Components/PageContainer/PageContainer';
+import React from "react";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import PageContainer from "../PageContainer/PageContainer";
 import { StyledLayout } from "./styles";
 
 interface LayoutProps {
@@ -12,9 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <StyledLayout>
       <Header />
-      <PageContainer>
-        {children}
-      </PageContainer>
+      <PageContainer>{children}</PageContainer>
       <Footer />
     </StyledLayout>
   );

@@ -3,9 +3,6 @@ import styled from "styled-components";
 export const StyledLogo = styled.h2`
   width: 5.5625rem;
   height: 2.79663rem;
-  
- 
-  
   display: flex;
 
   a {

@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-export const StyledLayout = styled.div`
-  min-width: 100%;
-  min-height: 100vh;
+export const StyledLayout = styled.body`
   display: flex;
   flex-direction: column;
-  
-
 `;

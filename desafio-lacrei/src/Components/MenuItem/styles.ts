@@ -15,6 +15,4 @@ export const StyledItem = styled.li<{ $isActive: boolean }>`
     line-height: normal;
     text-decoration: none;
   }
-
-
 `;

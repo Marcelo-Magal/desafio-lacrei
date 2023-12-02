@@ -8,7 +8,4 @@ export const StyledList = styled.nav`
   margin-top: 1.19rem;
   margin-bottom: 1.16rem;
   justify-content: auto;
-  
-
 `;
-
