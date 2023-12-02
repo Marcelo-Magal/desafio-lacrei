@@ -1,16 +1,14 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { StyledButtonContainer } from "../ButtonContainer/styles";
-import PageButton from '../PageButton/PageButton';
 
 interface ButtonContainerProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
-const ButtonContainer: React.FC = () => {
+const ButtonContainer: React.FC<ButtonContainerProps> = ({children}) => {
   return (
     <StyledButtonContainer>
-      <PageButton className='button-pessoa' to ="/UserPerson" text='Pessoa Usuária'/>
-      <PageButton className='button-profissional' to ="/Professional" text='Profissional'/>
+      {children}
     </StyledButtonContainer>
   );
 };

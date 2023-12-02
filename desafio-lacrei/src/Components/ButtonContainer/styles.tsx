@@ -1,22 +1,19 @@
 import styled from "styled-components";
 
-export const StyledButtonContainer = styled.nav`
+export const StyledButtonContainer = styled.div`
   display: flex;
   gap: 4.31rem;
   margin-top: 3rem;
   
   .button-pessoa {
-    background: #018762;
-    a{
-        color: #FFF;
-    }
+    background-color	: #018762;
+    color: #FFF;
+  
   }
 
   .button-profissional {
-    background: #FFF;
-    a {
-        color: #018762;
-    }
+    background-color: #FFF;
+     color: #018762;
   }
   
 `;

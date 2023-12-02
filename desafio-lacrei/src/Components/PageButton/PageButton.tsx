@@ -1,12 +1,16 @@
-import React from "react";
-import { Link} from 'react-router-dom';
-import { StyledPageButton } from "./styles";
+import React from 'react';
+import { StyledPageButton } from './styles'; // Ajuste o caminho conforme necessário
 
-const PageButton: React.FC<{ text: string; to: string; className?: string }> = ({text, to, className}) => {
+interface PageButtonProps {
+  to: string;
+  text: string;
+  className?: string;
+}
 
+const PageButton: React.FC<PageButtonProps> = ({ text, to, className }) => {
   return (
-    <StyledPageButton className={className}>
-      <Link to={to}>{text}</Link>
+    <StyledPageButton to={to} className={className}>
+      {text}
     </StyledPageButton>
   );
 };
