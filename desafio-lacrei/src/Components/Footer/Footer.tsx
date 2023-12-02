@@ -1,11 +1,16 @@
 import React from "react";
 import { StyledFooter } from "./styles";
-import FotterContainer from "../FooterContainer/FooterContainer";
+import FooterPages from "../FooterPages/FooterPages";
+import FooterSocial from "../FooterSocial/FooterSocial";
+import Rectangle from "../Rectangle/Rectangle";
+import FooterText from "../FooterText/FooterText";
 
 const Footer: React.FC = () => {
   return (
     <StyledFooter>
-      <FotterContainer />
+      <FooterPages />
+      <FooterSocial />
+      <FooterText />
     </StyledFooter>
   );
 };

@@ -7,8 +7,8 @@ const FooterPagesItem: React.FC<{ text: string, to: string }> = ({ text, to }) =
   const isActive = location.pathname === to;
   
   return (  
-    <StyledFooterPagesItem isActive={isActive}> 
-        <li><Link className="footer-item" to={to}>{text}</Link></li>
+    <StyledFooterPagesItem $isActive={isActive}> 
+        <Link className="footer-item" to={to}>{text}</Link>
     </StyledFooterPagesItem>
   );
 };

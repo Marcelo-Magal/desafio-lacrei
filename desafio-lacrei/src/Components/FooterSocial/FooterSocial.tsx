@@ -1,12 +1,15 @@
 import React from "react";
-import { Link, useLocation } from 'react-router-dom';
+import FooterSocialItem from "../FooterSocialItem/FooterSocialItem";
 import { StyledFooterSocial } from "./styles";
 
-const FooterSocial: React.FC<{ text: string, to: string }> = ({ text, to }) => {
+
+const FooterSocial: React.FC = () => {
    
   return (  
     <StyledFooterSocial> 
-        <li><a className="footer-social" href={to} target="_blank" rel="noopener noreferrer">{text}</a></li>
+        <FooterSocialItem name="facebook" to="https://www.facebook.com/lacrei.saude"/>
+        <FooterSocialItem name="instagram" to="https://www.instagram.com/lacrei.saude/"/>
+        <FooterSocialItem name="linkedin" to="https://www.linkedin.com/company/lacrei/"/>
     </StyledFooterSocial>
   );
 };

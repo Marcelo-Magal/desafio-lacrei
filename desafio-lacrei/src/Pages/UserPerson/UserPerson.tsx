@@ -1,11 +1,15 @@
 import React from 'react';
+import { StyledUserPerson } from './styles'
+import Text from '../../Components/Text/Text';
+import PersonImage from '../../Assets/img/PersonImage.svg'
 
 const UserPerson: React.FC = () => {
   return (
-    <main>
-      <h1>Página Usuário Pessoa</h1>
-      {/* Outros conteúdos da página inicial */}
-    </main>
+    <StyledUserPerson>
+      <Text text='Pessoa Usuária' className='pessoa-text'/>
+      <Text text='A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais de qualidade e que atendam às suas necessidades de forma segura e acolhedora.' className='atendimento-text'/>
+      <img src={PersonImage}/>
+    </StyledUserPerson>
   );
 };
 
