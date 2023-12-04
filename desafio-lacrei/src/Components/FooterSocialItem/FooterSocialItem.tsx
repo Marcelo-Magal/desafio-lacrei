@@ -1,38 +1,21 @@
-import React from "react";
-import { StyledFooterSocialItem } from "./styles";
-import FacebookIcon from "../../Assets/img/FacebookLogo.svg";
-import InstagramIcon from "../../Assets/img/InstagramLogo.svg";
-import LinkedInIcon from "../../Assets/img/LinkedinLogo.svg";
+// FooterSocialItem.tsx
+import React from 'react';
+import { StyledFooterSocialItem } from './styles';
 
-const FooterSocialItem: React.FC<{ name: string; to: string }> = ({
-  name,
-  to,
-}) => {
-  const getSocialIcon = (name: string) => {
-    switch (name) {
-      case "facebook":
-        return <img src={FacebookIcon} alt="Facebook" />;
-      case "instagram":
-        return <img src={InstagramIcon} alt="Instagram" />;
-      case "linkedin":
-        return <img src={LinkedInIcon} alt="LinkedIn" />;
-      default:
-        return null;
-    }
-  };
+interface FooterSocialItemProps {
+  icon: React.ReactNode;
+  to: string;
+}
 
+const FooterSocialItem: React.FC<FooterSocialItemProps> = ({ icon, to }) => {
   return (
     <StyledFooterSocialItem>
-      <a
-        className="footer-social"
-        href={to}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {getSocialIcon(name)}
+      <a href={to} target="_blank" rel="noopener noreferrer" className="footer-social">
+        {icon}
       </a>
     </StyledFooterSocialItem>
   );
 };
 
 export default FooterSocialItem;
+
