@@ -5,9 +5,17 @@ import { StyledFotterPages } from "./styles";
 const FooterPages: React.FC = () => {
   return (
     <StyledFotterPages>
-      <FooterPagesItem text="Home" to="/" />
-      <FooterPagesItem text="Pessoa Usuária" to="/UserPerson" />
-      <FooterPagesItem text="Profissional" to="/Professional" />
+      <FooterPagesItem text="Home" to="/" className="footer-pages-item" />
+      <FooterPagesItem
+        text="Pessoa Usuária"
+        to="/UserPerson"
+        className="footer-pages-item"
+      />
+      <FooterPagesItem
+        text="Profissional"
+        to="/Professional"
+        className="footer-pages-item"
+      />
     </StyledFotterPages>
   );
 };

@@ -3,7 +3,7 @@ import { StyledHome } from "./styles";
 import Text from "../../Components/Text/Text";
 import ButtonContainer from "../../Components/ButtonContainer/ButtonContainer";
 import HomeImage from "../../Assets/img/HomeImage.svg";
-import PageButton from "../../Components/PageButton/PageButton";
+import Button from "../../Components/Button/Button";
 
 const Home: React.FC = () => {
   return (
@@ -15,19 +15,19 @@ const Home: React.FC = () => {
           text="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+"
         />
         <ButtonContainer className="button-container">
-          <PageButton
+          <Button
             className="button-pessoa"
             to="/UserPerson"
             text="Pessoa Usuária"
           />
-          <PageButton
+          <Button
             className="button-profissional"
             to="/Professional"
             text="Profissional"
           />
         </ButtonContainer>
       </div>
-      <img src={HomeImage} />
+      <img src={HomeImage} alt=""/>
     </StyledHome>
   );
 };
