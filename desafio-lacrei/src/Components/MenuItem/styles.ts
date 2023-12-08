@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const StyledItem = styled.li<{ $isActive: boolean }>`
+export const StyledItem = styled.a<{ $isActive: boolean }>`
   // Cria um componente estilizado baseado na tag 'li' (list item) do HTML.
   // Este componente aceita uma propriedade 'isActive' do tipo booleano.
-  list-style: none;
+  
 
   .menu-item {
     width: 8.75rem;
@@ -14,5 +14,11 @@ export const StyledItem = styled.li<{ $isActive: boolean }>`
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
+    white-space: nowrap;
+    
+
+    @media (max-width: 520px) {
+      font-size: 0.875rem;
+    }
   }
 `;

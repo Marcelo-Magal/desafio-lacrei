@@ -206,7 +206,13 @@ html {
   }
 
   /* Estilos Base e Outros Estilos Globais */
-  
+  body, html {
+    
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(31, 31, 31);
+}
+
 `;
 
 export default GlobalStyle;

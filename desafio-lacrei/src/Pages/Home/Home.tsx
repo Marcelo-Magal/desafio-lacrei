@@ -8,13 +8,13 @@ import Button from "../../Components/Button/Button";
 const Home: React.FC = () => {
   return (
     <StyledHome>
-      <div className="text-button-container">
-        <Text className="text-boas-vindas" text="Boas vindas a Lacrei Saúde" />
+      <div className="text-home-container">
+        <Text className="text-boas-vindas text-h2" text="Boas vindas a Lacrei Saúde" />
         <Text
           className="text-plataforma"
           text="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+"
         />
-        <ButtonContainer className="button-container">
+        <ButtonContainer className="buttons-container">
           <Button
             className="button-pessoa"
             to="/UserPerson"
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
           />
         </ButtonContainer>
       </div>
-      <img src={HomeImage} alt=""/>
+      <img className="img-home" src={HomeImage} alt="Imagem Inicial"/>
     </StyledHome>
   );
 };
