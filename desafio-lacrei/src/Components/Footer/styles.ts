@@ -12,21 +12,11 @@ export const StyledFooter = styled.footer`
   justify-content: space-between;
   align-items: space-between;
 
-  /* Estilos para tablets (tela média), acima de 768px */
-  @media (min-width: 768px) {
-    .footer {
-      width: 50%;
-      padding: 15px;
-      font-size: 1.2rem;
-    }
+  @media (max-width: 1040px) {
+    margin: 0px 2rem;
   }
-
-  /* Estilos para desktops (tela grande), acima de 1024px */
-  @media (min-width: 1024px) {
-    .fotter {
-      width: 33.3333%;
-      padding: 20px;
-      font-size: 1.4rem;
-    }
+  @media (max-width: 520px) {
+    margin: 0px 1rem;
+    padding-top: 1rem;
   }
 `;

@@ -5,9 +5,13 @@ export const StyledFotterPages = styled.nav`
   gap: 2.5rem;
   box-sizing: border-box;
 
+  @media (max-width: 520px) {
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
   .footer-pages-item {
     color: #646464;
-    font-family: "Nunito", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
